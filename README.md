@@ -3,7 +3,7 @@
 
 ###Installation
 
-1. Open Terminal or and Command Line and enter the following:
+1. Open Terminal or and Command Line and enter the following **(Skip this step if you are using a pre-built virtual box like Vagrant)**:
 
 	```
 	$ npm install peak -g
