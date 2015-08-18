@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]><html class="lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+    <head>
+        !(MobileAppHeaders)
+        <meta charset="utf-8">
+        <title>
+            !(Title)
+            <!-- #(SearchPage) --> 
+                (!(lang:Search results for SearchQuery))
+            <!-- ## -->
+            <!-- #(PermalinkPage) -->
+                <!-- #(PostSummary) -->
+                     — !(PostSummary)
+                <!-- ## -->
+            <!-- ## -->
+        </title>
+        
+        <!-- +(src: "partials/meta.html") -->
+
+        <link rel="stylesheet" href="http://static.tumblr.com/wqcsqza/yTRnpu5wi/main-min.css">
+
+        <!-- HTML5 Shiv -->
+        <!--[if lt IE 9]>
+            <script src="http://static.tumblr.com/hriofhd/Qj0m8pn7q/html5shiv.js"></script>
+        <![endif]-->
+
+        <!-- +(src: "css/main.css" media: "all") -->
+    </head>
+    <body data-urlencoded-name="!(URLEncodedName)" class="
+        !(select:Layout)
+        <!-- #(IndexPage) --> index-page<!-- ## -->
+        <!-- #(PermalinkPage) --> permalink<!-- ## -->
+        <!-- #(SearchPage) --> search-page
+            <!-- #(NoSearchResults) --> no-results<!-- ## -->
+        <!-- ## -->
+        <!-- #(HideHeaderImage) --> no-header-image<!-- ## -->
+        <!-- #(NoStretchHeaderImage) --> contain-header-image<!-- ## -->">
+        <section id="page">
+            <!-- +(src: "partials/header.html") -->
+            
+            <!-- #(SearchPage) -->
+                <!-- #(NoSearchResults) -->
+                <div class="search-no-results content">
+                    !(lang:Sorry no search results found).
+                </div>
+                <!-- ## -->
+            <!-- ## -->
+            <section id="posts" class="content clearfix 
+                <!-- #(HideTitle) -->
+                    <!-- #(HideDescription) -->no-title-desc <!-- ## -->
+                <!-- ## -->
+                <!-- #(HideHeaderImage) -->no-image <!-- ## --> 
+                <!-- #(ShowAvatar) -->avatar-style-!(AvatarShape)<!-- ## --> 
+                <!-- #(HideAvatar) -->avatar-hidden<!-- ## --> 
+                <!-- #(IfShowNavigation) -->show-nav<!-- ## -->">
+
+                <div data-page-id="!(CurrentPage)">
+                    <!-- #(Posts) -->
+                            <article class="
+                            <!-- #(Text) -->text <!-- ## -->
+                            <!-- #(Photoset) -->photoset <!-- ## -->
+                            <!-- #(Photo) -->photo <!-- ## -->
+                            <!-- #(RebloggedFrom) -->reblogged <!-- ## -->
+                            <!-- #(Quote) -->quote <!-- ## -->
+                            <!-- #(Link) -->link <!-- ## -->
+                            <!-- #(Chat) -->chat <!-- ## -->
+                            <!-- #(Audio) -->audio <!-- ## -->
+                            <!-- #(Video) -->video <!-- ## -->
+                            <!-- #(Answer) -->answer <!-- ## -->
+                            <!-- #(Date) -->not-page post-!(PostID)<!-- ## --> 
+                            <!-- #(PermalinkPage) --> active exposed<!-- ## -->" 
+                            <!-- #(:Date) -->data-post-id="post_!(PostID)"<!-- ## -->>
+                                <div class="post-wrapper clearfix">
+                                    <!-- #(RebloggedFrom) -->
+                                    <header class="reblog-header">
+                                        <a class="reblog-link" href="!(ReblogParentURL)"><i class="icon-reblog"></i>!(ReblogParentName)</a>
+                                    </header>
+                                    <!-- ## -->
+                                    <section class="post">
+                                        <!-- +(src: "partials/blocks/text.html") -->
+                                        <!-- +(src: "partials/blocks/photo.html") -->
+                                        <!-- +(src: "partials/blocks/photoset.html") -->
+                                        <!-- +(src: "partials/blocks/quote.html") -->
+                                        <!-- +(src: "partials/blocks/link.html") -->
+                                        <!-- +(src: "partials/blocks/chat.html") -->
+                                        <!-- +(src: "partials/blocks/audio.html") -->
+                                        <!-- +(src: "partials/blocks/video.html") -->
+                                        <!-- +(src: "partials/blocks/answer.html") -->
+                                        
+                                        
+                                        <!-- Meta data is included regardless of post type -->
+                                        <!-- +(src: "partials/post-meta.html") -->
+
+                                    </section>
+
+                                    <!-- +(src: "partials/post-footer.html") -->
+                                    <!-- +(src: "partials/post-notes.html") -->
+                                </div>
+                            </article>
+                    <!-- ## -->
+                </div>
+            </section>
+            <!-- +(src: "partials/footer.html") -->
+        </section>
+        <!-- +(src: "js/main.js") -->
+        <!-- +(src: "partials/extra-scripts.html") -->
+    </body>
+</html>

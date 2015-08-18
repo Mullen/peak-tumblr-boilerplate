@@ -1,0 +1,44 @@
+<!-- #(Date) -->
+<section class="panel">
+    <footer class="post-footer">
+        <section class="inline-meta date-notes">
+            <div class="date-note-wrapper">
+                <!-- #(NoteCount) -->
+                    <a href="!(Permalink)#notes" class="meta-item post-notes">!(NoteCountWithLabel)</a>
+                <!-- ## -->
+                <a href="!(Permalink)" title="!(TimeAgo)" class="meta-item post-date">!(ShortMonth) !(DayOfMonth)!(DayOfMonthSuffix), !(Year)</a>
+            </div>
+        </section>
+
+        <section class="post-controls">
+            <div class="controls-wrapper">
+                <div class="control share-control">
+                    <nav class="pop">
+                        <a href="#" class="share selector icon-export"></a>
+                        <div class="pop-menu share-menu south" id="share_!(PostID)">
+                            <ul>
+                                <li class="open-in-app"><a href="#" class="share-item open-in-app" data-post="!(PostID)">Open in app</a></li>
+                                <li><a href="http://facebook.com/sharer.php?u=!(URLEncodedPermalink)&amp;t=!(URLEncodedTitle)" class="share-item facebook" target="_blank">Facebook</a></li>
+                                <li><a href="https://twitter.com/intent/tweet?text=!(URLEncodedTweetSummary)" class="share-item twitter" target="_blank">Tweet</a></li>
+                                <!-- #(Photo) -->
+                                    <li><a href="//www.pinterest.com/pin/create/button/?url=!(URLEncodedPermalink)&amp;media=!(PhotoURL-500)" class="share-item pinterest" target="_blank">Pinterest</a></li>
+                                <!-- ## -->
+                                <!-- #(Video) -->
+                                    <!-- #(VideoThumbnail) -->
+                                        <li><a href="//www.pinterest.com/pin/create/button/?url=!(URLEncodedPermalink)&amp;media=!(VideoThumbnailURL)&amp;is_video=true" class="share-item pinterest" target="_blank">Pinterest</a></li>
+                                    <!-- ## -->
+                                <!-- ## -->
+                                <li><a href="mailto:?subject=!(URLEncodedShareString)&amp;body=!(URLEncodedMailSummary)" class="share-item mail">Mail</a></li>
+                                <li><a href="!(Permalink)/embed" class="share-item permalink">Embed</a></li>
+                                <li><a href="!(Permalink)" class="share-item permalink">!(lang:Permalink) <i class="icon-arrow_carrot_right"></i></a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="control reblog-control">!(ReblogButton)</div>
+                <div class="control like-control">!(LikeButton)</div>
+            </div>
+        </section>
+    </footer>
+</section>
+<!-- ## -->
